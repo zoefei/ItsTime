@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ItsTime</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/cover_page.css') }}">;
+		<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}"rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<img class="bg" src="{{ url_for('static', filename='images/image1.jpg') }}">
+		<p>Need a Time Together...?</p>
+		<a class="btn btn-lg active" id="button" href="{{ url_for('dash') }}" >Create an Event</a>
+	</body>
+</html>
