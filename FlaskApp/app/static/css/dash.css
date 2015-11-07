@@ -1,0 +1,43 @@
+#Name {
+	color:#939393;
+  	font: 1.5vw arial, sans-serif;
+  	margin-top: 17px;
+}
+
+#peopleName {
+  color:#939393;
+  font: 2.5vw arial, sans-serif;
+  width:220px;
+}
+
+hr { 
+    display: block;
+    margin-top: 0 em;
+    margin-bottom: 0.6em;
+    margin-left: auto;
+    margin-right: 0.5em;
+    border-style: inset;
+    border-width: 1px;
+} 
+
+#editButton {
+	margin-top: 60px;
+}
+
+#submitButton {
+	margin-top: 60px;
+	margin-left: 5px;
+}
+
+#date {
+	margin-left: 260px;
+}
+
+#time {
+	color:#939393;
+  	font: 1.5vw arial, sans-serif;
+}
+
+#datetimepicker3 {
+	height:10px;
+}
