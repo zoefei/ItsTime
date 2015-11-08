@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var id= 0;
 
 function AddPerson() {
@@ -6,11 +5,10 @@ function AddPerson() {
     console.log(id);
     content = document.getElementById('content').innerHTML + '<div class="row">' + '<div class="col-md-3">' + '<p id="Name"> Name </p>';
     content = content + '<input type="text" id="peopleName" style="border: 0; background-color: #fff;"/>';
-=======
+
 function AddPerson(start, end, id) {
     content = document.getElementById('content').innerHTML + '<div class="row">' + '<div class="col-md-3">' + '<p id="Name"> Name </p>';
     content = content + '<input type="text" id="peopleName" style="border: 0; background-color: #fff;" value="Name"/>';
->>>>>>> origin/master
     content = content + ' <hr></hr>';
     content = content + '</div>';
     content = content + '<div class="col-md-6">' + '<div id="container' + id + '" style="max-width: 650px; height: 180px; margin: 0 auto"></div>';
@@ -24,11 +22,8 @@ function AddPerson(start, end, id) {
     content = content + ' <div class="form-group col-xs-4 col-xs-push-2">';
     content = content + ' <input id="to" class="form-control input-group-lg reg_name" type="text" name="to"'
     content = content + 'title="Enter time To" placeholder="To"/>' + ' </div>';
-<<<<<<< HEAD
     content = content + '<div class="form-group col-xs-4 col-xs-push-2">' + '<button onclick="addTime()" id="add" type="button" class="btn btn-success" style="magin-left:100px">+ Add</button>';
-=======
     content = content + '<div class="form-group col-xs-4 col-xs-push-2">' + '<button onclick="click()" id="add" type="button" class="btn btn-success" style="magin-left:100px">+ Add</button>';
->>>>>>> origin/master
     content = content + '</div>'
     content = content + '</div>';
     document.getElementById('content').innerHTML = content;
@@ -98,7 +93,6 @@ function AddPerson(start, end, id) {
             data: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
             color: 'rgba(255, 255, 255, .4)'
         }]
-<<<<<<< HEAD
     }, function (chart) { // on complete
 
         var x1 = chart.xAxis[0].toPixels(7),
@@ -128,7 +122,6 @@ function addTime() {
   $.ajax({
         method: "GET",
         url: "http://127.0.0.1:5000/time/" + name + "/" + time_from + "/" + time_to,
-=======
     });
 }
 
@@ -140,15 +133,11 @@ function click() {
   $.ajax({
         method: "GET",
         url: "http://127.0.0.1:5000/time/" + a + "/" + b,
->>>>>>> origin/master
         dataType: "json"
     })
      .done(function( msg ) {
         console.log( "Data Saved: " + msg );
-<<<<<<< HEAD
         console.log(msg);
-=======
->>>>>>> origin/master
      });
 }
 
